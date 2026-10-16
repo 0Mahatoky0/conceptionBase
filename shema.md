@@ -41,3 +41,13 @@ ne leur demande rien.
 - *Modification* : Commandes(**id_commande**,date,id_client)
 ### Piege :
 Utiliser left ou rigth join en fonction du requete .
+
+# etape 5 : Serveurs et tables
+Je veux savoir quel serveur a pris la commande et à quelle table. Pour les plats à emporter, il n'y
+a pas de table.
+### Travail :
+- *Nouveau* : Serveur(**id_serveur**,nom)
+- *Nouveau* : notables (**id_table**,num)
+- *Modification* : Commandes(**id_commande**,date,id_client,id_serveur)
+### Piege :
+- le nom table pose probleme ,car il sagit d un identificateur sql
