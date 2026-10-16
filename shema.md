@@ -18,3 +18,14 @@ Je veux la liste des plats avec leur prix
 *Modification* : Plat (**id_plat**,libelle,prix,#id_categorie)
 ### Piege :
 - Pour eviter la repetition de taper a chaque nouveau plat , le nom de sont categorie
+
+# etape 3 : Les commandes
+### Demande :
+J'enregistre les commandes : la date, quels plats, et combien de chaque.
+## Travail :
+- Categories(**id_categorie**,libelle)
+- Plat (**id_plat**,libelle,prix,#id_categorie)
+- *Nouveau* : Commandes(**id_commande**,date)
+- *Nouveau* : Coommande_plats(**id_commande_plat**,#id_commande,#id_plat)
+## Piege :
+Pour le moment je ne place pas de colonne quantite, je peut pa calculer facilement.
