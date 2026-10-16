@@ -29,3 +29,15 @@ J'enregistre les commandes : la date, quels plats, et combien de chaque.
 - *Nouveau* : Coommande_plats(**id_commande_plat**,#id_commande,#id_plat)
 ## Piege :
 Pour le moment je ne place pas de colonne quantite, je peut pa calculer facilement.
+
+# etape 4 : Les habitues
+Certains clients sont des habitués, je veux les reconnaître. Mais la plupart sont de passage et je
+ne leur demande rien.
+### Demande :
+Certains clients sont des habitués, je veux les reconnaître. Mais la plupart sont de passage et je
+ne leur demande rien.
+### Travail :
+- *Nouveau* : Client(**id_client**,nom)
+- *Modification* : Commandes(**id_commande**,date,id_client)
+### Piege :
+Utiliser left ou rigth join en fonction du requete .

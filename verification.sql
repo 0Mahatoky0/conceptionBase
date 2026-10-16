@@ -8,3 +8,6 @@ SELECT c.libelle,count(id_plat) FROM categories c LEFT JOIN plat p ON c.id_categ
 SELECT c."date" , sum(p.prix) montant FROM public.commandes c JOIN public.commande_plats cp ON c.id_commande = cp.id_commande JOIN public.plat p ON cp.id_plat = p.id_plat GROUP BY c.id_commande;
 
 SELECT c."date" , p.libelle , p.prix FROM public.commandes c JOIN public.commande_plats cp ON c.id_commande = cp.id_commande JOIN public.plat p ON cp.id_plat = p.id_plat ;
+
+-- ETAPE 4 : VERIFICATION
+SELECT c.id_commande , c."date" , CASE WHEN cl.id_client IS NULL THEN 'Client de passage' ELSE cl.nom END AS client FROM commandes c LEFT JOIN client cl ON c.id_client = cl.id_client;
