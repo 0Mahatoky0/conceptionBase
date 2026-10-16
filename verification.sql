@@ -1,0 +1,2 @@
+-- ETAPE 1 : VERIFICATION
+SELECT * FROM public.plat ORDER BY prix;
